@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.0/theme/black.min.css">
 
     <style>
+      /* Kill Reveal's internal padding/margins completely */
+.reveal,
+.reveal .slides,
+.reveal .slides section,
+.reveal .backgrounds,
+.reveal .backgrounds .slide-background {
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+/* Force backgrounds to truly fill */
+.reveal .backgrounds .slide-background,
+.reveal .slides section {
+  width: 100% !important;
+  height: 100% !important;
+}
+
       /* NUCLEAR RESET - Remove ALL spacing */
       * {
         margin: 0 !important;
@@ -653,4 +674,5 @@
   </body>
 
 </html>
+
 
