@@ -1,61 +1,68 @@
 <!doctype html>
 <html>
   <head>
-    <style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: black; /* Or your preferred background */
-  }
-  
-  .reveal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .reveal .slides {
-    width: 900px !important;
-    height: 1600px !important;
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .reveal .slides section {
-    position: absolute !important;
-    width: 100% !important;
-    height: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    top: 0 !important;
-    left: 0 !important;
-  }
-
-  .reveal .slides section[data-background-video] {
-    background-size: contain !important;
-    background-position: center center !important;
-  }
-</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>Manim Slides</title>
 
+    <!-- Load Reveal.js CSS FIRST -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.0/theme/black.min.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/zenburn.min.css">
-    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+      /* NUCLEAR RESET - Remove ALL spacing */
+      * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+      }
+
+      /* FULLSCREEN CONTAINER */
+      .reveal {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow: hidden !important;
+        background: #EAEAEA !important;
+      }
+
+      /* SLIDES CONTAINER - Force 9:16 */
+      .reveal .slides {
+        width: 900px !important;
+        height: 1600px !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+
+      /* INDIVIDUAL SLIDES */
+      .reveal .slides section {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: black !important;
+      }
+
+      /* VIDEO BACKGROUNDS */
+      .reveal .slides section[data-background-video] {
+        background-size: contain !important;
+        background-position: center !important;
+      }
+
+      /* DIRECT VIDEO STYLING (if needed) */
+      .reveal .slides section video {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -646,3 +653,4 @@
   </body>
 
 </html>
+
