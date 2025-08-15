@@ -1,6 +1,49 @@
 <!doctype html>
 <html>
   <head>
+    <style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black; /* Or your preferred background */
+  }
+  
+  .reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .reveal .slides {
+    width: 900px !important;
+    height: 1600px !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .reveal .slides section {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .reveal .slides section[data-background-video] {
+    background-size: contain !important;
+    background-position: center center !important;
+  }
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -601,4 +644,5 @@
       );
     </script>
   </body>
+
 </html>
