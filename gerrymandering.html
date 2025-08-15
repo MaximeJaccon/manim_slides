@@ -13,6 +13,21 @@
     <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/zenburn.min.css">
     <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #eaeaea;
+      }
+      .reveal {
+        height: 100%;
+      }
+      .reveal .slides {
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -391,7 +406,7 @@
         height: '100%',
         // Factor of the display size that should remain empty around
         // the content
-        margin: -10.0,
+        margin: 0.0,
         // Bounds for smallest/largest possible scale to apply to content
         minScale: 0.2,
         maxScale: 2.0,
@@ -523,9 +538,9 @@
         autoAnimateDuration: 1.0,
         autoAnimateUnmatched: true,
         // CSS properties that can be auto-animated. Position & scale
-        // is matched separately so there's no need to include styles
+        // is matched separately so there's no need to include s
         // like top/right/bottom/left, width/height or margin.
-        autoAnimateStyles: ['opacity', 'color', 'background-color', 'padding', 'font-size', 'line-height', 'letter-spacing', 'border-width', 'border-color', 'border-radius', 'outline', 'outline-offset'],
+        autoAnimates: ['opacity', 'color', 'background-color', 'padding', 'font-size', 'line-height', 'letter-spacing', 'border-width', 'border-color', 'border-radius', 'outline', 'outline-offset'],
         // Controls automatic progression to the next slide
         // - 0:      Auto-sliding only happens if the data-autoslide HTML attribute
         //           is present on the current slide or fragment
@@ -552,7 +567,7 @@
         postMessageEvents: false,
         // Focuses body when page changes visibility to ensure keyboard shortcuts work
         focusBodyOnPageVisibilityChange: true,
-        // Transition style
+        // Transition 
         transition: 'none', // none/fade/slide/convex/concave/zoom
         // Transition speed
         transitionSpeed: 'default', // default/fast/slow
@@ -602,5 +617,6 @@
     </script>
   </body>
 </html>
+
 
 
