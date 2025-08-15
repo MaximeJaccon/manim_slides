@@ -6,84 +6,13 @@
 
     <title>Manim Slides</title>
 
-    <!-- Load Reveal.js CSS FIRST -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.0/theme/black.min.css">
 
-    <style>
-      /* Kill Reveal's internal padding/margins completely */
-.reveal,
-.reveal .slides,
-.reveal .slides section,
-.reveal .backgrounds,
-.reveal .backgrounds .slide-background {
-  margin: 0 !important;
-  padding: 0 !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-}
-
-/* Force backgrounds to truly fill */
-.reveal .backgrounds .slide-background,
-.reveal .slides section {
-  width: 100% !important;
-  height: 100% !important;
-}
-
-      /* NUCLEAR RESET - Remove ALL spacing */
-      * {
-        margin: 0 !important;
-        padding: 0 !important;
-        box-sizing: border-box !important;
-      }
-
-      /* FULLSCREEN CONTAINER */
-      .reveal {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        overflow: hidden !important;
-        background: #EAEAEA !important;
-      }
-
-      /* SLIDES CONTAINER - Force 9:16 */
-      .reveal .slides {
-        width: 900px !important;
-        height: 1600px !important;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-      }
-
-      /* INDIVIDUAL SLIDES */
-      .reveal .slides section {
-        position: absolute !important;
-        width: 100% !important;
-        height: 100% !important;
-        background: black !important;
-      }
-
-      /* VIDEO BACKGROUNDS */
-      .reveal .slides section[data-background-video] {
-        background-size: contain !important;
-        background-position: center !important;
-      }
-
-      /* DIRECT VIDEO STYLING (if needed) */
-      .reveal .slides section video {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: contain !important;
-      }
-    </style>
+    <!-- Theme used for syntax highlighting of code -->
+    <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/zenburn.min.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
   </head>
 
   <body>
@@ -672,7 +601,4 @@
       );
     </script>
   </body>
-
 </html>
-
-
